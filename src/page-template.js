@@ -5,27 +5,20 @@ const generateTeam = team => {
     // create the manager html
     const generateManager = manager => {
         return `
-        <div>
-            <div>
-                <h2>${manager.getName()}</h2>
-                <h3>
-                    <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
-                </h3>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        ID: ${manager.getId()}
-                    </li>
-                    <li>
-                        Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a>
-                    </li>
-                    <li>
-                        Office number: ${manager.getOfficeNumber()}
-                    </li>
-                </ul>
-            </div>
+        <div class="card border border-info col-3 .col-sm-6 mr-3 my-3">
+        <div class="card-header">
+          <i class="fa-solid fa-lg fa-user"></i> Manager
         </div>
+        <div class="card-body">
+          <h3 class="card-title"> ${manager.name} </h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item fw-lighter"> ID: ${manager.id}</li>
+            <li class="list-group-item fw-lighter"> Email: <span id="email"><a
+                  href="mailto:${manager.email}">${manager.email}</a></span></li>
+            <li class="list-group-item fw-lighter"> Office Number: ${manager.officeNumber}</li>
+          </ul>
+        </div>
+      </div>
         `;
     };
 

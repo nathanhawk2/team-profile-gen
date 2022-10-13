@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  manager
+  <div class="card border border-info col-3 .col-sm-6 mr-3 my-3">
+    <div class="card-header">
+      <i class="fa-solid fa-lg fa-user"></i> Manager
+    </div>
+    <div class="card-body">
+      <h3 class="card-title"> ${manager.name} </h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item fw-lighter"> ID: ${manager.identity}</li>
+        <li class="list-group-item fw-lighter"> Email: <span id="email"><a
+              href="mailto:${manager.email}">${manager.email}</a></span></li>
+        <li class="list-group-item fw-lighter"> Office Number: ${manager.number}</li>
+      </ul>
+    </div>
+  </div>
+
+engineer
+<div class="card border border-info col-3 .col-sm-6 mr-3 my-3">
+  <div class="card-header">
+  <i class="fa-solid fa-lg fa-hammer"></i> Engineer
+  </div>
+  <div class="card-body">
+  <h3 class="card-title"> ${engineer.name} </h3>
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item fw-lighter"> ID: ${engineer.identity}</li>
+      <li class="list-group-item fw-lighter"> Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>
+      <li class="list-group-item fw-lighter"> Github Profile: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a></li>
+  </ul>
+  </div>
+</div>
+</body>
+
+</html>
