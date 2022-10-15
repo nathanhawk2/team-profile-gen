@@ -1,4 +1,3 @@
-// PROVIDED BY INSTRUCTOR 2022-09-09
 // create the team
 const generateTeam = team => {
 
@@ -15,7 +14,7 @@ const generateTeam = team => {
             <li class="list-group-item fw-lighter"> ID: ${manager.getId()}</li>
             <li class="list-group-item fw-lighter"> Email: <span id="email"><a
                   href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></span></li>
-            <li class="list-group-item fw-lighter"> Office Number: ${manager.getNumber()}</li>
+            <li class="list-group-item fw-lighter"> Office Number: ${manager.getOfficeNumber()}</li>
           </ul>
         </div>
       </div>
